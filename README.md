@@ -3,7 +3,7 @@ remove directory by nodejs
 
 ## use  
 
-```  
+```  js
 const rmdir = require('../lib/rmdir');
 
 rmdir('./1').catch(console.error)
