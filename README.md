@@ -24,4 +24,3 @@ rmdir('./1').catch(console.error)
 
 ![删除文件的打印信息](https://github.com/fuxingZhang/rmdir/blob/master/screenshots/删除文件的打印信息.png)  
 
-![删除文件的打印信息](https://github.com/fuxingZhang/rmdir/blob/master/screenshots/删除文件的打印信息2.png)  
