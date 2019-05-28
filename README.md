@@ -4,14 +4,27 @@ remove directory by nodejs
 ## use fs  
 
 ```  js
-const rmdir = require('../lib/rmdir');
+const fs = require('fs').promises;
+const path = require('path');
 
-rmdir('./1').catch(console.error)
+async function rmdir(dir) {
+  console.log(`${'in directory:'.yellow} ${dir}`)
+  const names = await fs.readdir(dir)
+  for(let name of names) {
+    const filePath = path.join(dir, name);
+    const stat = await fs.stat(filePath)
+    if(stat.isDirectory()) {
+      await rmdir(filePath)
+    } else {
+      await fs.unlink(filePath)
+      console.log(`${'delete file:'.red} ${filePath}`)
+    }
+  }
+  await fs.rmdir(dir)
+  console.log(`${'delete directory:'.red} ${dir}`)
+}
 
-// or
-
-// rmdir(`${__dirname}/1`).catch(console.error)
-
+module.exports = rmdir
 ```  
 
 ## use child_process.exec
