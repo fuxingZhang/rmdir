@@ -1,7 +1,9 @@
 
-require('../utils/index')
+require('../utils/node_colors')
 
-const rmdir = require('../lib/rmdir.no.console');
-rmdir('./1').catch(console.error)
+const rmdir = require('../lib/rmdir');
+const path = require('path');
 
-// rmdir(`${__dirname}/1`).catch(console.error)
+rmdir('./1').catch(console.error)   // window  and  linux
+
+// rmdir(path.join(__dirname, './1')).catch(console.error)  // window  and  linux
