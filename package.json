@@ -1,0 +1,27 @@
+{
+  "name": "@zhangfuxing/rmdir",
+  "version": "1.0.1",
+  "description": "remove directory by nodejs",
+  "main": "./lib",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuxingZhang/rmdir.git"
+  },
+  "author": "Zhang Fu Xing <502545703@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fuxingZhang/rmdir/issues"
+  },
+  "homepage": "https://github.com/fuxingZhang/rmdir#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
+}
