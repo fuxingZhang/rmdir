@@ -4,7 +4,7 @@ remove directory by nodejs
 ## Install
 
 ```sh
-$ npm i rmdir
+$ npm i @zhangfuxing/rmdir
 ```  
 
 ## Useage  
