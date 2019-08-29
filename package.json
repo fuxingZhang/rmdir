@@ -1,6 +1,6 @@
 {
   "name": "@zhangfuxing/rmdir",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "remove directory by nodejs",
   "main": "./lib",
   "directories": {
