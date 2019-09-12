@@ -1,2 +1,4 @@
 // Type definitions
-export function rmdir(dir: string): Promise<void>
+declare function rmdir(dir: string): Promise<void>
+
+export = rmdir
