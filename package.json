@@ -1,6 +1,6 @@
 {
   "name": "@zhangfuxing/rmdir",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "remove directory by nodejs",
   "main": "./lib",
   "directories": {
@@ -10,6 +10,16 @@
   "scripts": {
     "test": "mocha"
   },
+  "keywords": [
+    "rmdir",
+    "remove directory",
+    "node",
+    "nodejs",
+    "fs",
+    "keyword",
+    "filter",
+    "file system"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fuxingZhang/rmdir.git"
